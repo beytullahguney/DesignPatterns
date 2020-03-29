@@ -6,7 +6,17 @@ namespace Creational_AbstractFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var vehicleFactory = new VehicleFactory();
+
+            IVehicle car = vehicleFactory.ProduceVehicle(VehicleType.Car);
+            car.DisplayInfo();
+
+            IVehicle truck = vehicleFactory.ProduceVehicle(VehicleType.Truck);
+            truck.DisplayInfo();
+
+            IVehicle motorCycle = vehicleFactory.ProduceVehicle(VehicleType.Motorcycle);
+            motorCycle.DisplayInfo();
+
         }
     }
 }
