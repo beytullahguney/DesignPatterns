@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Creational_AbstractFactory
 {
+    /// <summary>
+    /// Creating Truck Vehicle
+    /// </summary>
     public class Truck : IVehicle
     {
         public void DisplayInfo()
